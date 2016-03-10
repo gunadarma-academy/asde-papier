@@ -4,12 +4,12 @@
 
 ## Team Member
 
-| Name   | Email              | GitHub |
-|--------|--------------------|--------|
-| Sandy  | sandyfebriant28@gmail.com | [@sandyin3d](https://github.com/sandyin3d)
-| Person | person@website.com | [@name](https://github.com/name)
-| Person | person@website.com | [@name](https://github.com/name)
-| Person | person@website.com | [@name](https://github.com/name)
+| Name      | Email              | GitHub |
+|-----------|--------------------|--------|
+| Sandy     | sandyfebriant28@gmail.com | [@sandyin3d](https://github.com/sandyin3d)
+| Angellica | angellica.octsa@gmail.com | [@angellicaos](https://github.com/angellicaos)
+| Person    | person@website.com | [@name](https://github.com/name)
+| Person    | person@website.com | [@name](https://github.com/name)
 
 --------------------------------------------------
 
