@@ -1,15 +1,16 @@
 # [Name Your Project Here]
 
-[Describe your project here]
+Pembuatan sebuah aplikasi yang diadaptasi dari permainan populer di kalangan anak muda, yaitu permainan truth or dare. Aplikasi ini dibuat di platform android.
 
 ## Team Member
 
 | Name      | Email              | GitHub |
 |-----------|--------------------|--------|
-| Sandy     | sandyfebriant28@gmail.com | [@sandyin3d](https://github.com/sandyin3d)
 | Angellica | angellica.octsa@gmail.com | [@angellicaos](https://github.com/angellicaos)
 | Person    | person@website.com | [@name](https://github.com/name)
-| Person    | person@website.com | [@name](https://github.com/name)
+| Mahendra  | mahendra.servanda@gmail.com.com | [@name](https://github.com/mahendraservanda)
+| Sandy     | sandyfebriant28@gmail.com | [@sandyin3d](https://github.com/sandyin3d)
+
 
 --------------------------------------------------
 
