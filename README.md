@@ -8,7 +8,7 @@ Pembuatan sebuah aplikasi yang diadaptasi dari permainan populer di kalangan ana
 |-----------|--------------------|--------|
 | Angellica | angellica.octsa@gmail.com | [@angellicaos](https://github.com/angellicaos)
 | Person    | person@website.com | [@name](https://github.com/name)
-| Mahendra  | mahendra.servanda@gmail.com.com | [@name](https://github.com/mahendraservanda)
+| Mahendra  | mahendra.servanda@gmail.com.com | [@mahendraservanda](https://github.com/mahendraservanda)
 | Sandy     | sandyfebriant28@gmail.com | [@sandyin3d](https://github.com/sandyin3d)
 
 
