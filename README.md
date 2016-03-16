@@ -1,4 +1,4 @@
-# [Name Your Project Here]
+# JURANI
 
 Pembuatan sebuah aplikasi yang diadaptasi dari permainan populer di kalangan anak muda, yaitu permainan truth or dare. Aplikasi ini dibuat di platform android.
 
