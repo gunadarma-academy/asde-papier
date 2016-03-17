@@ -7,7 +7,7 @@ Pembuatan sebuah aplikasi yang diadaptasi dari permainan populer di kalangan ana
 | Name      | Email              | GitHub |
 |-----------|--------------------|--------|
 | Angellica | angellica.octsa@gmail.com | [@angellicaos](https://github.com/angellicaos)
-| Person    | person@website.com | [@name](https://github.com/name)
+| Kenneth   | Kenneth.mhakim@gmail.com | [@apaya](https://github.com/thunderkee)
 | Mahendra  | mahendra.servanda@gmail.com.com | [@mahendraservanda](https://github.com/mahendraservanda)
 | Sandy     | sandyfebriant28@gmail.com | [@sandyin3d](https://github.com/sandyin3d)
 
