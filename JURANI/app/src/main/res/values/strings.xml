@@ -17,4 +17,7 @@
     <string name="text_rolling">Keep it rolling</string>
     <string name="text_turn_id">Yang harus jurani adalah...</string>
     <string name="text_turn_en">And the turn goes to...</string>
+    <string name="repeat">Ulang</string>
+    <string name="truth">Jujur</string>
+    <string name="dare">Berani</string>
 </resources>
