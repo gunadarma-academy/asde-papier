@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -14,8 +16,11 @@ import android.widget.TextView;
 public class RandomPlayerActivity extends AppCompatActivity {
 
     private int i = 0;
-    private TextView randName;
     private String [] player;
+    private String chosen;
+    private TextView randName;
+    private Button stop;
+    private Thread runThread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +57,20 @@ public class RandomPlayerActivity extends AppCompatActivity {
             }
         };
 
-        Thread runThread = new Thread(runName);
+        runThread = new Thread(runName);
         runThread.start();
+
+        stop = (Button) findViewById(R.id.stop_button_player);
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                runThread.interrupt();
+                chosen = randName.getText().toString();
+                Intent goChoose = new Intent (getApplicationContext(), ChosenPlayerActivity.class);
+                goChoose.putExtra("chosen", chosen);
+                startActivity(goChoose);
+            }
+        });
     }
 
     @Override
