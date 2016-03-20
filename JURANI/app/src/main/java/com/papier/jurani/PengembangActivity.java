@@ -10,13 +10,15 @@ import android.widget.Button;
  */
 public class PengembangActivity extends Activity {
 
+    private Button closeDev;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_pengembang);
 
-        Button closeDev = (Button) findViewById(R.id.close_button_dev);
+        closeDev = (Button) findViewById(R.id.close_button_dev);
         closeDev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

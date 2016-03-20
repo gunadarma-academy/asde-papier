@@ -13,7 +13,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public int people = 2;
+    private int people = 2;
+    private TextView count;
+    private Button plus;
+    private Button min;
+    private Button goToName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.count_toolbar);
         setSupportActionBar(toolbar);
 
-        final TextView count = (TextView) findViewById(R.id.count);
-        Button plus = (Button) findViewById(R.id.plus_count);
-        Button min = (Button) findViewById(R.id.min_count);
+        count = (TextView) findViewById(R.id.count);
+        plus = (Button) findViewById(R.id.plus_count);
+        min = (Button) findViewById(R.id.min_count);
 
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button goToName = (Button) findViewById(R.id.next_button_count);
+        goToName = (Button) findViewById(R.id.next_button_count);
         goToName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

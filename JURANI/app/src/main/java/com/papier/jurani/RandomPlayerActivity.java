@@ -13,8 +13,8 @@ import android.widget.TextView;
  */
 public class RandomPlayerActivity extends AppCompatActivity {
 
-    int i = 0;
-    TextView randName;
+    private int i = 0;
+    private TextView randName;
     private String [] player;
 
     @Override
