@@ -19,7 +19,7 @@ public class PlayerInputActivity extends AppCompatActivity {
 
     private int total;
     private int i = 0;
-    public String [] name;
+    private String [] name;
     private EditText inputName;
     private Button insert;
 

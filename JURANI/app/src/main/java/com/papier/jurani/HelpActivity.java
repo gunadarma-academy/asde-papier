@@ -11,12 +11,14 @@ import android.widget.Button;
  */
 public class HelpActivity extends Activity {
 
+    private Button closeHelp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
 
-        Button closeHelp = (Button) findViewById(R.id.close_button_help);
+        closeHelp = (Button) findViewById(R.id.close_button_help);
         closeHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
