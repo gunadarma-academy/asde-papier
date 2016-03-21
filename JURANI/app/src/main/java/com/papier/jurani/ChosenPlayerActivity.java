@@ -19,6 +19,7 @@ public class ChosenPlayerActivity extends AppCompatActivity {
     private TextView theone;
     private Bundle str;
     private Button repeat;
+    private Button truth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,14 @@ public class ChosenPlayerActivity extends AppCompatActivity {
             }
         });
 
+        truth = (Button) findViewById(R.id.truth_button);
+        truth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToTruth = new Intent (getApplicationContext(), RandomTruthActivity.class);
+                startActivity(goToTruth);
+            }
+        });
     }
 
     @Override
