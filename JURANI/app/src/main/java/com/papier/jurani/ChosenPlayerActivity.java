@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -13,9 +15,10 @@ import android.widget.TextView;
  */
 public class ChosenPlayerActivity extends AppCompatActivity {
 
+    private String chosenName;
     private TextView theone;
     private Bundle str;
-    private String chosenName;
+    private Button repeat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,15 @@ public class ChosenPlayerActivity extends AppCompatActivity {
 
         theone = (TextView) findViewById(R.id.chosen_name);
         theone.setText(chosenName);
+
+        repeat = (Button) findViewById(R.id.repeat_button);
+        repeat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 
     @Override
