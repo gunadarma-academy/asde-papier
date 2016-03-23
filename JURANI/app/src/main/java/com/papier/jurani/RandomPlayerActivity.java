@@ -25,7 +25,7 @@ public class RandomPlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_random);
+        setContentView(R.layout.activity_random_player);
         Toolbar toolbar = (Toolbar) findViewById(R.id.random_player_toolbar);
         setSupportActionBar(toolbar);
 
@@ -37,7 +37,7 @@ public class RandomPlayerActivity extends AppCompatActivity {
             public void run() {
                 while (i < player.length) {
                     try {
-                        Thread.sleep(250);
+                        Thread.sleep(150);
                         randName.post(new Runnable() {
                             @Override
                             public void run() {
@@ -60,7 +60,7 @@ public class RandomPlayerActivity extends AppCompatActivity {
         runThread = new Thread(runName);
         runThread.start();
 
-        stop = (Button) findViewById(R.id.stop_button_player);
+        stop = (Button) findViewById(R.id.stop_button_random_player);
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
