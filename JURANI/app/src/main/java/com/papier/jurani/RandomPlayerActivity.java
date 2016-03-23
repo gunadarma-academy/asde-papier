@@ -60,7 +60,7 @@ public class RandomPlayerActivity extends AppCompatActivity {
         runThread = new Thread(runName);
         runThread.start();
 
-        stop = (Button) findViewById(R.id.stop_button_player);
+        stop = (Button) findViewById(R.id.stop_button_random_player);
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
