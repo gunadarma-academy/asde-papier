@@ -67,6 +67,7 @@ public class PlayerInputActivity extends AppCompatActivity {
         Intent goRandom = new Intent(getApplicationContext(), RandomPlayerActivity.class);
         goRandom.putExtra("player", name);
         startActivity(goRandom);
+        finish();
     }
 
     @Override
