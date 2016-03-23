@@ -17,7 +17,7 @@ public class RandomPlayerActivity extends AppCompatActivity {
 
     private int i = 0;
     private String [] player;
-    private String chosen;
+    private String chosenPlayer;
     private TextView randName;
     private Button stop;
     private Thread runThread;
@@ -31,7 +31,7 @@ public class RandomPlayerActivity extends AppCompatActivity {
 
         player = getIntent().getStringArrayExtra("player");
         randName = (TextView) findViewById(R.id.random_name);
-        //randName.setText(player[0]);
+
         Runnable runName = new Runnable() {
             @Override
             public void run() {
@@ -65,9 +65,10 @@ public class RandomPlayerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 runThread.interrupt();
-                chosen = randName.getText().toString();
+                chosenPlayer = randName.getText().toString();
                 Intent goChoose = new Intent (getApplicationContext(), ChosenPlayerActivity.class);
-                goChoose.putExtra("chosen", chosen);
+                goChoose.putExtra("player", player);
+                goChoose.putExtra("chosen", chosenPlayer);
                 startActivity(goChoose);
             }
         });
