@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/gunadarma-academy/asde-papier.png?label=ready&title=Ready)](https://waffle.io/gunadarma-academy/asde-papier)
 # JURANI
 
 Pembuatan sebuah aplikasi yang diadaptasi dari permainan populer di kalangan anak muda, yaitu permainan truth or dare. Aplikasi ini dibuat di platform android.
