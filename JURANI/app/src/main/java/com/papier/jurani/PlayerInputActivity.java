@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -20,6 +21,8 @@ public class PlayerInputActivity extends AppCompatActivity {
     private int total;
     private int i = 0;
     private String [] name;
+    private String text;
+    private TextView childtext;
     private EditText inputName;
     private Button insert;
 
@@ -29,6 +32,10 @@ public class PlayerInputActivity extends AppCompatActivity {
         setContentView(R.layout.activity_player);
         Toolbar toolbar = (Toolbar) findViewById(R.id.player_toolbar);
         setSupportActionBar(toolbar);
+
+        childtext = (TextView) findViewById(R.id.player_text);
+        text = childtext.getText().toString();
+        childtext.setText(text+" "+String.valueOf(i+1)+":");
 
         total = getIntent().getIntExtra("sum", 2); System.out.println(total);
 
@@ -48,6 +55,7 @@ public class PlayerInputActivity extends AppCompatActivity {
                         randomName();
                     } else {
                         i += 1;
+                        childtext.setText(text+" "+String.valueOf(i+1)+":");
                         inputName.setText("");
                     }
                 }
