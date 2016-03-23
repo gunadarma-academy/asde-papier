@@ -11,26 +11,39 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- * Created by Angellica on 3/19/2016.
+ * Created by Angellica on 3/23/2016.
  */
-public class RandomPlayerActivity extends AppCompatActivity {
+public class RandomTargetActivity extends AppCompatActivity {
 
     private int i = 0;
     private String [] player;
     private String chosenPlayer;
-    private TextView randName;
+    private String chosenTask;
+    private String chosenTarget;
+    private TextView thePlayer;
+    private TextView theTask;
+    private TextView randTarget;
     private Button stop;
     private Thread runThread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_random_player);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.random_player_toolbar);
+        setContentView(R.layout.activity_random_target);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.random_target_toolbar);
         setSupportActionBar(toolbar);
 
         player = getIntent().getStringArrayExtra("player");
-        randName = (TextView) findViewById(R.id.random_name);
+
+        chosenPlayer = getIntent().getExtras().getString("chosen");
+        thePlayer = (TextView) findViewById(R.id.first_text);
+        thePlayer.setText(chosenPlayer);
+
+        chosenTask = getIntent().getExtras().getString("task");
+        theTask = (TextView) findViewById(R.id.second_text);
+        theTask.setText(chosenTask);
+
+        randTarget = (TextView) findViewById(R.id.random_target);
 
         Runnable runName = new Runnable() {
             @Override
@@ -38,14 +51,22 @@ public class RandomPlayerActivity extends AppCompatActivity {
                 while (i < player.length) {
                     try {
                         Thread.sleep(150);
-                        randName.post(new Runnable() {
+                        randTarget.post(new Runnable() {
                             @Override
                             public void run() {
-                                randName.setText(player[i]);
-                                if (i == player.length-1) {
-                                    i = 0;
+                                if (player[i].equals(chosenPlayer)) {
+                                    if (i == player.length-1) {
+                                        i = 0;
+                                    } else {
+                                        i += 1;
+                                    }
                                 } else {
-                                    i += 1;
+                                    randTarget.setText(player[i]);
+                                    if (i == player.length-1) {
+                                        i = 0;
+                                    } else {
+                                        i += 1;
+                                    }
                                 }
                             }
                         });
@@ -60,18 +81,21 @@ public class RandomPlayerActivity extends AppCompatActivity {
         runThread = new Thread(runName);
         runThread.start();
 
-        stop = (Button) findViewById(R.id.stop_button_random_player);
+        stop = (Button) findViewById(R.id.stop_button_random_target);
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 runThread.interrupt();
-                chosenPlayer = randName.getText().toString();
-                Intent goChoose = new Intent (getApplicationContext(), ChosenPlayerActivity.class);
-                goChoose.putExtra("player", player);
-                goChoose.putExtra("chosen", chosenPlayer);
+                chosenTarget = randTarget.getText().toString();
+                Intent goChoose = new Intent(getApplicationContext(), ChosenTargetActivity.class);
+                goChoose.putExtra("player", chosenPlayer);
+                goChoose.putExtra("task", chosenTask);
+                goChoose.putExtra("target", chosenTarget);
                 startActivity(goChoose);
+                finish();
             }
         });
+
     }
 
     @Override

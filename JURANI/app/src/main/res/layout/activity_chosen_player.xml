@@ -57,7 +57,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:text="@string/repeat"
+            android:text="@string/action_repeat"
             android:layout_gravity="center_horizontal"
             style="?android:attr/borderlessButtonStyle"/>
 
@@ -66,7 +66,7 @@
             android:layout_marginTop="27dp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/truth"
+            android:text="@string/action_truth"
             android:layout_gravity="center_horizontal" />
 
         <Button
@@ -74,7 +74,7 @@
             android:layout_marginTop="27dp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/dare"
+            android:text="@string/action_dare"
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
