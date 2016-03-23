@@ -15,24 +15,26 @@ import android.widget.TextView;
  */
 public class ChosenPlayerActivity extends AppCompatActivity {
 
-    private String chosenName;
-    private TextView theone;
-    private Bundle str;
+    private String [] player;
+    private String chosenPlayer;
+    private TextView chosenText;
     private Button repeat;
     private Button truth;
+    private Button dare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_theone);
+        setContentView(R.layout.activity_chosen_player);
         Toolbar toolbar = (Toolbar) findViewById(R.id.random_player_toolbar);
         setSupportActionBar(toolbar);
 
-        str = getIntent().getExtras();
-        chosenName = str.getString("chosen");
+        player = getIntent().getStringArrayExtra("player");
 
-        theone = (TextView) findViewById(R.id.chosen_name);
-        theone.setText(chosenName);
+        chosenPlayer = getIntent().getExtras().getString("chosen");
+
+        chosenText = (TextView) findViewById(R.id.chosen_name);
+        chosenText.setText(chosenPlayer);
 
         repeat = (Button) findViewById(R.id.repeat_button);
         repeat.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +49,22 @@ public class ChosenPlayerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent goToTruth = new Intent (getApplicationContext(), RandomTruthActivity.class);
+                goToTruth.putExtra("player", player);
+                goToTruth.putExtra("chosen", chosenPlayer);
                 startActivity(goToTruth);
+                finish();
+            }
+        });
+
+        dare = (Button) findViewById(R.id.dare_button);
+        dare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToDare = new Intent (getApplicationContext(), RandomDareActivity.class);
+                goToDare.putExtra("player", player);
+                goToDare.putExtra("chosen", chosenPlayer);
+                startActivity(goToDare);
+                finish();
             }
         });
     }
