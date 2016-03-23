@@ -54,16 +54,6 @@
         android:layout_marginTop="27dp" >
 
         <Button
-            android:id="@+id/repeat_button_truth"
-            android:layout_marginTop="27dp"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:text="@string/repeat"
-            android:layout_gravity="center_horizontal"
-            style="?android:attr/borderlessButtonStyle"/>
-
-        <Button
             android:id="@+id/next_button_truth"
             android:layout_marginTop="27dp"
             android:layout_width="100dp"
