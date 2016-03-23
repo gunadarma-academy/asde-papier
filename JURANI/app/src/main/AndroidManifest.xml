@@ -85,6 +85,36 @@
 
             </intent-filter>
         </activity>
+        <!-- Random Dare Activity-->
+        <activity
+            android:name=".RandomDareActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+        <!-- Random Target Activity-->
+        <activity
+            android:name=".RandomTargetActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+        <!-- Chosen Target Activity-->
+        <activity
+            android:name=".ChosenTargetActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
