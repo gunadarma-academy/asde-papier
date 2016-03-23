@@ -12,11 +12,14 @@
     <string name="text_count_id">Masukkan jumlah pemain</string>
     <string name="text_dare_en">I dare you to...</string>
     <string name="text_dare_id">Yang dapat giliran harus...</string>
+    <string name="text_truth_en">Be honest about...</string>
+    <string name="text_truth_id">Yang dapat giliran harus jujur tentang...</string>
     <string name="text_who_play">Who is playing?</string>
     <string name="text_nama">Masukkan nama pemain</string>
     <string name="text_rolling">Keep it rolling</string>
     <string name="text_turn_id">Yang harus jurani adalah...</string>
     <string name="text_turn_en">And the turn goes to...</string>
+    <string name="target">Your target is...</string>
     <string name="repeat">Ulang</string>
     <string name="truth">Jujur</string>
     <string name="dare">Berani</string>
