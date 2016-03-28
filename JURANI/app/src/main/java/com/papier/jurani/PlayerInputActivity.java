@@ -37,7 +37,7 @@ public class PlayerInputActivity extends AppCompatActivity {
 
         childtext = (TextView) findViewById(R.id.player_text);
         text = childtext.getText().toString();
-        childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain :");
+        childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
 
         name = new String[total];
 
@@ -55,7 +55,7 @@ public class PlayerInputActivity extends AppCompatActivity {
                         randomName();
                     } else {
                         i += 1;
-                        childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain :");
+                        childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
                         inputName.setText("");
                     }
                 }
