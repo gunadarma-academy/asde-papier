@@ -23,4 +23,5 @@
     <string name="text_turn_id">Yang harus jurani adalah...</string>
     <string name="text_turn_en">And the turn goes to...</string>
     <string name="target">Your target is...</string>
+    <string name="alphabet">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
 </resources>
