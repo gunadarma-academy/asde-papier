@@ -37,7 +37,7 @@ public class RandomPlayerActivity extends AppCompatActivity {
             public void run() {
                 while (i < player.length) {
                     try {
-                        Thread.sleep(150);
+                        Thread.sleep(10);
                         randName.post(new Runnable() {
                             @Override
                             public void run() {
@@ -98,6 +98,9 @@ public class RandomPlayerActivity extends AppCompatActivity {
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {
+            Intent goToFirst = new Intent (getApplicationContext(), MainActivity.class);
+            startActivity(goToFirst);
+            finish();
             return true;
         }
 

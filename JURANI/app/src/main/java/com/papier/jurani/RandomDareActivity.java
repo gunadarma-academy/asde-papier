@@ -41,7 +41,7 @@ public class RandomDareActivity extends AppCompatActivity {
             public void run() {
                 while (i < dare.length) {
                     try {
-                        Thread.sleep(150);
+                        Thread.sleep(10);
                         randDare.post(new Runnable() {
                             @Override
                             public void run() {
@@ -104,6 +104,9 @@ public class RandomDareActivity extends AppCompatActivity {
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {
+            Intent goToFirst = new Intent (getApplicationContext(), MainActivity.class);
+            startActivity(goToFirst);
+            finish();
             return true;
         }
 
