@@ -41,7 +41,7 @@ public class RandomDareActivity extends AppCompatActivity {
             public void run() {
                 while (i < dare.length) {
                     try {
-                        Thread.sleep(150);
+                        Thread.sleep(10);
                         randDare.post(new Runnable() {
                             @Override
                             public void run() {
