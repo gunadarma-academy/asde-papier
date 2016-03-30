@@ -33,11 +33,11 @@ public class PlayerInputActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.player_toolbar);
         setSupportActionBar(toolbar);
 
+        total = getIntent().getIntExtra("sum", 2);
+
         childtext = (TextView) findViewById(R.id.player_text);
         text = childtext.getText().toString();
-        childtext.setText(text+" "+String.valueOf(i+1)+":");
-
-        total = getIntent().getIntExtra("sum", 2); System.out.println(total);
+        childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
 
         name = new String[total];
 
@@ -55,7 +55,7 @@ public class PlayerInputActivity extends AppCompatActivity {
                         randomName();
                     } else {
                         i += 1;
-                        childtext.setText(text+" "+String.valueOf(i+1)+":");
+                        childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
                         inputName.setText("");
                     }
                 }
@@ -94,6 +94,9 @@ public class PlayerInputActivity extends AppCompatActivity {
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {
+            Intent goToFirst = new Intent (getApplicationContext(), MainActivity.class);
+            startActivity(goToFirst);
+            finish();
             return true;
         }
 

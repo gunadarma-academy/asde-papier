@@ -105,6 +105,9 @@ public class RandomTruthActivity extends AppCompatActivity {
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {
+            Intent goToFirst = new Intent (getApplicationContext(), MainActivity.class);
+            startActivity(goToFirst);
+            finish();
             return true;
         }
 

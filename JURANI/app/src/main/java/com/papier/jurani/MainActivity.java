@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentGoToName = new Intent(getApplicationContext(), PlayerInputActivity.class);
                 intentGoToName.putExtra("sum", people);
                 startActivity(intentGoToName);
+                finish();
             }
         });
     }
@@ -93,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {
+            people = 2;
+            count.setText(Integer.toString(people));
             return true;
         }
 
