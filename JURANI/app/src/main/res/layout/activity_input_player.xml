@@ -43,6 +43,8 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:imeActionLabel="label"
+        android:imeOptions="actionNext"
         android:singleLine="true"
         android:digits="@string/alphabet"
         android:textSize="21dp"

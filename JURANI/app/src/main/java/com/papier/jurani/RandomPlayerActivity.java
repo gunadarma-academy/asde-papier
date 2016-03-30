@@ -37,7 +37,7 @@ public class RandomPlayerActivity extends AppCompatActivity {
             public void run() {
                 while (i < player.length) {
                     try {
-                        Thread.sleep(150);
+                        Thread.sleep(10);
                         randName.post(new Runnable() {
                             @Override
                             public void run() {

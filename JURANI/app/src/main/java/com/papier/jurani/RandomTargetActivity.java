@@ -50,7 +50,7 @@ public class RandomTargetActivity extends AppCompatActivity {
             public void run() {
                 while (i < player.length) {
                     try {
-                        Thread.sleep(150);
+                        Thread.sleep(10);
                         randTarget.post(new Runnable() {
                             @Override
                             public void run() {
