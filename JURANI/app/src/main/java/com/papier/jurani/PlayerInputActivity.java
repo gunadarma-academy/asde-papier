@@ -86,6 +86,30 @@ public class PlayerInputActivity extends AppCompatActivity {
                 if (inputName.getText().toString().equals("") || inputName.getText().toString().equals(" ")) {
                     Toast.makeText(getApplicationContext(), "Masukkan nama pemain.", Toast.LENGTH_SHORT).show();
                 } else {
+                    String tmp = inputName.getText().toString();
+                    for (int a=0; a<name.length; a++) {
+                        if (name[a] == null) {
+                            name[i] = tmp;
+                            if (i == total-1) {
+                                randomName();
+                            } else {
+                                i += 1;
+                                childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
+                                inputName.setText("");
+                            }
+                            break;
+                        } else {
+                            if (tmp.toLowerCase().equals(name[a].toLowerCase())) {
+                                Toast.makeText(getApplicationContext(), "Masukkan nama yang lain.", Toast.LENGTH_SHORT).show();
+                                inputName.setText("");
+                                break;
+                            } else {
+                                continue;
+                            }
+                        }
+                    }
+
+                    /*
                     name[i] = inputName.getText().toString();
                     if (i == total-1) {
                         randomName();
@@ -93,7 +117,7 @@ public class PlayerInputActivity extends AppCompatActivity {
                         i += 1;
                         childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
                         inputName.setText("");
-                    }
+                    }*/
                 }
             }
         });
