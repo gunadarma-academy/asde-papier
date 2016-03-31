@@ -1,13 +1,17 @@
 package com.papier.jurani;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -29,7 +33,7 @@ public class PlayerInputActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_player);
+        setContentView(R.layout.activity_input_player);
         Toolbar toolbar = (Toolbar) findViewById(R.id.player_toolbar);
         setSupportActionBar(toolbar);
 
@@ -42,6 +46,38 @@ public class PlayerInputActivity extends AppCompatActivity {
         name = new String[total];
 
         inputName = (EditText) findViewById(R.id.input_name);
+        /**
+        inputName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_NEXT) {
+                    if (inputName.getText().toString().equals("") || inputName.getText().toString().equals(" ")) {
+                        Toast.makeText(getApplicationContext(), "Masukkan nama pemain.", Toast.LENGTH_SHORT).show();
+                    } else {
+                        name[i] = inputName.getText().toString();
+                        if (i == total-1) {
+                            randomName();
+                            //inputName.setImeOptions(EditorInfo.IME_ACTION_DONE);
+                            //inputName.setImeActionLabel("label", EditorInfo.IME_ACTION_DONE);
+                        } else {
+                            i += 1;
+                            childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
+                            inputName.setText("");
+                        }
+                    }
+                    return true;
+                }
+                return false;
+            }
+        });
+
+        insert = (Button) findViewById(R.id.next_button_player);
+        insert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                randomName();
+            }
+        });*/
 
         insert = (Button) findViewById(R.id.next_button_player);
         insert.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +97,7 @@ public class PlayerInputActivity extends AppCompatActivity {
                 }
             }
         });
+
     }
 
     public void randomName() {
@@ -94,9 +131,26 @@ public class PlayerInputActivity extends AppCompatActivity {
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {
-            Intent goToFirst = new Intent (getApplicationContext(), MainActivity.class);
-            startActivity(goToFirst);
-            finish();
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Apakah kamu yakin ingin me-reset permainan?").setTitle("Reset");
+            builder.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent goToFirst = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(goToFirst);
+                    finish();
+                }
+            });
+            builder.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    closeContextMenu();
+                }
+            });
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
             return true;
         }
 
