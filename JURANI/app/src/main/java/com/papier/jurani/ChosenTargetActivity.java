@@ -1,7 +1,9 @@
 package com.papier.jurani;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -72,13 +74,30 @@ public class ChosenTargetActivity extends AppCompatActivity {
             startActivity(goToHelp);
             return true;
         } else if (id == R.id.action_developer) {
-            Intent goToDev = new Intent (getApplicationContext(), PengembangActivity.class);
+            Intent goToDev = new Intent (getApplicationContext(), DeveloperActivity.class);
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {
-            Intent goToFirst = new Intent (getApplicationContext(), MainActivity.class);
-            startActivity(goToFirst);
-            finish();
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Apakah kamu yakin ingin me-reset permainan?").setTitle("Reset");
+            builder.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent goToFirst = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(goToFirst);
+                    finish();
+                }
+            });
+            builder.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    closeContextMenu();
+                }
+            });
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
             return true;
         }
 
