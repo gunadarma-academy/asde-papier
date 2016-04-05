@@ -8,7 +8,7 @@ import android.widget.Button;
 /**
  * Created by Angellica on 3/19/2016.
  */
-public class PengembangActivity extends Activity {
+public class DeveloperActivity extends Activity {
 
     private Button closeDev;
 
@@ -16,7 +16,7 @@ public class PengembangActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_pengembang);
+        setContentView(R.layout.activity_developer);
 
         closeDev = (Button) findViewById(R.id.close_button_dev);
         closeDev.setOnClickListener(new View.OnClickListener() {

@@ -120,7 +120,7 @@ public class RandomTargetActivity extends AppCompatActivity {
             startActivity(goToHelp);
             return true;
         } else if (id == R.id.action_developer) {
-            Intent goToDev = new Intent (getApplicationContext(), PengembangActivity.class);
+            Intent goToDev = new Intent (getApplicationContext(), DeveloperActivity.class);
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {

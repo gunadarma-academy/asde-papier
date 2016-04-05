@@ -7,11 +7,9 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -151,7 +149,7 @@ public class PlayerInputActivity extends AppCompatActivity {
             startActivity(goToHelp);
             return true;
         } else if (id == R.id.action_developer) {
-            Intent goToDev = new Intent (getApplicationContext(), PengembangActivity.class);
+            Intent goToDev = new Intent (getApplicationContext(), DeveloperActivity.class);
             startActivity(goToDev);
             return true;
         } else if (id == R.id.action_reset) {
