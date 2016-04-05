@@ -25,7 +25,50 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="15dp"
-        android:text="Jurani adalah permainan jujur dan berani yang dapat menjadi ice-breaker ketika sedang bersama teman atau kerabat.\n\nUntuk memainkannya, masukkan jumlah pemain dan siapa saja pemainnya, akan ada undian, dan yang mendapatkan undian harus memberikan kejujuran atau menerima tantangan." />
+        android:text="Jurani adalah permainan jujur dan berani yang dapat menjadi ice-breaker ketika sedang bersama teman atau kerabat." />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Untuk memainkannya:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="1. Masukkan jumlah dan nama pemainnya."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="2. Undi penantang."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="3. Pilih JUJUR atau BERANI."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="4. Undi ragam dari tantangan."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="5. Undi objek tantangan."/>
 
     <Button
         android:id="@+id/close_button_help"
