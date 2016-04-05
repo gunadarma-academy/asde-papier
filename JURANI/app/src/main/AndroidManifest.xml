@@ -38,7 +38,7 @@
         </activity>
         <!-- Pengembang Activity -->
         <activity
-            android:name=".PengembangActivity"
+            android:name=".DeveloperActivity"
             android:theme="@style/Theme.AppCompat.Light.Dialog" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
