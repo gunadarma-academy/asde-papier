@@ -19,7 +19,13 @@ public class RandomTruthActivity extends AppCompatActivity {
 
     private int i = 0;
     private String [] player;
-    private String [] truth = {"Kesan pertama kamu terhadap...", "Apa yang paling kamu nggak suka dari...", "Kenapa kamu suka sama..."};
+    private String [] truth = {"Kesan pertama kamu terhadap...", "Apa yang paling kamu nggak suka dari...", "Kenapa kamu suka sama...",
+                                "Kepada kamu, apa kesalahan terbesar yang pernah dilakukan oleh...", "Ke mana kamu bakal honeymoon kalo pergi sama...",
+                                "Ceritakan fakta memalukan yang kamu tahu tentang...", "Apa yang kamu lakukan kalo kamu terjebak di pulau sebulan bersama...",
+                                "Menurut kamu, apa kebiasaan paling menyebalkan dari...", "Kebohongan apa yang pernah kamu katakan ke...",
+                                "Sifat apa yang pengen kamu ubah dari...", "Ceritakan pengalaman memalukan kamu bersama...", "Ceritakan pengalaman berteman kamu dan...",
+                                "Kamu lebih pilih nolong kucing tenggelam atau kasih duit 100rb ke...", "Menurut kamu, cantik/ganteng kah si...",
+                                "Menurut kamu, lebih pinter kamu atau...", "Sifat apa yang paling kamu kagumi dari...", "Sampaikan semua hal yang kamu pendam selama ini terhadap..."};
     private String chosenPlayer;
     private String chosenTruth;
     private TextView randTruth;
