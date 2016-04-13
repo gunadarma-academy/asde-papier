@@ -31,9 +31,11 @@ Thumbs.db
 *.bz2
 *.xz
 *.lzma
+
 ## packing-only formats
 *.iso
 *.tar
+
 ## package management formats
 *.dmg
 *.xpi
