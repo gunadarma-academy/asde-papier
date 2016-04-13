@@ -19,7 +19,12 @@ public class RandomDareActivity extends AppCompatActivity {
 
     private int i = 0;
     private String [] player;
-    private String [] dare = {"Impersonate...", "Tembak...", "Putusin..."};
+    private String [] dare = {"Impersonate...", "Tembak...", "Putusin...", "Cabut bulu kaki kanannya...",
+                                "Pakaikan lipstik ke...", "Peluk erat...", "Selama 5 menit, gendong...",
+                                "Gelitikin pinggang...", "Ikutin gerak-gerik...", "Terima pukulan dari...",
+                                "Rayu atau gombalin...", "Pukul kencang tangan...", "Ajak kencan si...",
+                                "Sampai makanannya abis, suapin...", "Nyanyiin lagu untuk...",
+                                "Sampai game selesai, pegang tangan...", "Bacain puisi untuk..."};
     private String chosenPlayer;
     private String chosenDare;
     private TextView randDare;
