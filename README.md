@@ -1,6 +1,8 @@
 [![Stories in Ready](https://badge.waffle.io/gunadarma-academy/asde-papier.png?label=ready&title=Ready)](https://waffle.io/gunadarma-academy/asde-papier)
 # JURANI
 
+[![Join the chat at https://gitter.im/gunadarma-academy/asde-papier](https://badges.gitter.im/gunadarma-academy/asde-papier.svg)](https://gitter.im/gunadarma-academy/asde-papier?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Pembuatan sebuah aplikasi yang diadaptasi dari permainan populer di kalangan anak muda, yaitu permainan truth or dare. Aplikasi ini dibuat di platform android.
 
 ## Team Member
