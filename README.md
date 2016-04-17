@@ -23,13 +23,8 @@ Estimasi terselesaikannya aplikasi ini selama 8 minggu dengan menerapkan Github 
 
 ## User Documentation
 
-[Explanation about the project requirements, analysis, design, architecture, components, interfaces, evaluation, presentation, and other characteristics.]
-<https://github.com/gunadarma-academy/asde-papier/tree/master/docs>
-(who, why, how, what, where, when)
-
-## Technical Documentation
-
-[How to develop, build, and use it.]
+### User Manual
+<https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf>
 
 --------------------------------------------------
 
