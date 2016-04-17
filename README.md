@@ -1,7 +1,13 @@
 [![Stories in Ready](https://badge.waffle.io/gunadarma-academy/asde-papier.png?label=ready&title=Ready)](https://waffle.io/gunadarma-academy/asde-papier)
 # JURANI
 
-Pembuatan sebuah aplikasi yang diadaptasi dari permainan populer di kalangan anak muda, yaitu permainan truth or dare. Aplikasi ini dibuat di platform android.
+[![Join the chat at https://gitter.im/gunadarma-academy/asde-papier](https://badges.gitter.im/gunadarma-academy/asde-papier.svg)](https://gitter.im/gunadarma-academy/asde-papier?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Jurani adalah sebuah aplikasi permainan yang diadaptasi dari sebuah permainan populer di kalangan remaja dan anak muda, yaitu permainan truth or dare. Pembuatan dan pengembangan aplikasi bertujuan untuk mendukung kebahagiaan bagi para pengguna serta kerabatnya dengan memberikan pengalaman bermain truth or dare yang lebih modern.
+
+Berawal dari kegelisahan ketika momen kumpul bersama keluarga, kolega, sahabat, ataupun rekan bisnis yang sering kehabisan topik dan para kerabat yang beralih ke ponselnya, sehingga sering kali menghasilkan momen yang kurang berkesan. Maka dari itu, kebutuhan akan kegiatan pendukung keakraban, yaitu sebagai ice breaking activity pun muncul, Hal ini lah yang melatarbelakangi ide Jurani dikembangkan.
+
+Estimasi terselesaikannya aplikasi ini selama 8 minggu dengan menerapkan Github sebagai project management toolsnya. 
 
 ## Team Member
 
