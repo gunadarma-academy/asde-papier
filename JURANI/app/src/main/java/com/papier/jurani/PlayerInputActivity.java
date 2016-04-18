@@ -23,7 +23,7 @@ public class PlayerInputActivity extends AppCompatActivity {
     private int total;
     private int i = 0;
     private String [] name;
-    private String text;
+    private TextView parenttext;
     private TextView childtext;
     private EditText inputName;
     private Button insert;
@@ -37,9 +37,11 @@ public class PlayerInputActivity extends AppCompatActivity {
 
         total = getIntent().getIntExtra("sum", 2);
 
-        childtext = (TextView) findViewById(R.id.player_text);
-        text = childtext.getText().toString();
-        childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
+        parenttext = (TextView) findViewById(R.id.player_parent_text);
+        parenttext.setText(String.valueOf(total-(i+1))+" more player to go");
+
+        childtext = (TextView) findViewById(R.id.player_child_text);
+        childtext.setText("Masukkan nama pemain ke-"+String.valueOf(i+1)+":");
 
         name = new String[total];
 
@@ -92,7 +94,8 @@ public class PlayerInputActivity extends AppCompatActivity {
                                 randomName();
                             } else {
                                 i += 1;
-                                childtext.setText(text+" "+String.valueOf(i+1)+" dari "+String.valueOf(total)+" pemain:");
+                                parenttext.setText(String.valueOf(total-(i+1))+" more player to go");
+                                childtext.setText("Masukkan nama pemain ke-"+String.valueOf(i+1)+":");
                                 inputName.setText("");
                             }
                             break;
