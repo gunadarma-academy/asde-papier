@@ -38,13 +38,13 @@ public class ChosenPlayerActivity extends AppCompatActivity {
         chosenText = (TextView) findViewById(R.id.chosen_name);
         chosenText.setText(chosenPlayer);
 
-        repeat = (Button) findViewById(R.id.repeat_button);
-        repeat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        //repeat = (Button) findViewById(R.id.repeat_button);
+        //repeat.setOnClickListener(new View.OnClickListener() {
+        //   @Override
+        //    public void onClick(View v) {
+        //        finish();
+        //    }
+        //});
 
         truth = (Button) findViewById(R.id.truth_button);
         truth.setOnClickListener(new View.OnClickListener() {
