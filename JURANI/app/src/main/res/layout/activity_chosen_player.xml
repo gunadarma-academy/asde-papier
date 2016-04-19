@@ -45,35 +45,34 @@
         android:textSize="21dp"
         android:textStyle="bold" />
 
+    <!--Linear Layout just for disguising-->
     <LinearLayout
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"></LinearLayout>
 
-        <Button
-            android:id="@+id/repeat_button"
-            android:layout_marginTop="27dp"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:text="@string/action_repeat"
-            android:layout_gravity="center_horizontal"
-            style="?android:attr/borderlessButtonStyle"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <Button
             android:id="@+id/truth_button"
-            android:layout_marginTop="27dp"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:background="@drawable/button_truth"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:text="@string/action_truth"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/dare_button"
-            android:layout_marginTop="27dp"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:background="@drawable/button_dare"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:text="@string/action_dare"
             android:layout_gravity="center_horizontal" />
 

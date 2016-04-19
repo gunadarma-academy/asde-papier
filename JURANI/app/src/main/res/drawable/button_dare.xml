@@ -6,15 +6,19 @@
             <!-- SHADOW LAYER -->
             <item android:bottom="7dp">
                 <shape>
-                    <solid android:color="@color/colorButtonShadowClicked" />
-                    <corners android:radius="10dp"/>
+                    <solid android:color="@color/colorButton2Shadow" />
+                    <corners
+                        android:topRightRadius="15dp"
+                        android:bottomRightRadius="15dp"/>
                 </shape>
             </item>
             <!-- CONTENT LAYER -->
             <item android:top="7dp">
                 <shape>
-                    <solid android:color="@color/colorButtonClicked" />
-                    <corners android:radius="10dp"/>
+                    <solid android:color="@color/colorButton2" />
+                    <corners
+                        android:topRightRadius="15dp"
+                        android:bottomRightRadius="15dp"/>
                 </shape>
             </item>
         </layer-list>
@@ -24,15 +28,19 @@
             <!-- SHADOW LAYER -->
             <item android:top="7dp">
                 <shape>
-                    <solid android:color="@color/colorButtonShadow" />
-                    <corners android:radius="10dp"/>
+                    <solid android:color="@color/colorButton2Shadow" />
+                    <corners
+                        android:topRightRadius="15dp"
+                        android:bottomRightRadius="15dp"/>
                 </shape>
             </item>
             <!-- CONTENT LAYER -->
             <item android:bottom="7dp">
                 <shape>
-                    <solid android:color="@color/colorButton" />
-                    <corners android:radius="10dp"/>
+                    <solid android:color="@color/colorButton2" />
+                    <corners
+                        android:topRightRadius="15dp"
+                        android:bottomRightRadius="15dp"/>
                 </shape>
             </item>
 

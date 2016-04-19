@@ -47,11 +47,19 @@
         android:textSize="21dp"
         android:textStyle="bold" />
 
+    <!--Linear Layout just for disguising-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"></LinearLayout>
+
     <Button
         android:id="@+id/repeat_game_button"
-        android:layout_marginTop="27dp"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:background="@drawable/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="@string/action_repeat"
         android:layout_gravity="center_horizontal" />
 
