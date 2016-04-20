@@ -22,13 +22,19 @@ Estimasi terselesaikannya aplikasi ini selama 8 minggu dengan menerapkan Github 
 
 ## User Documentation
 
-Untuk mengetahui cara pemasangan hingga penggunaan aplikasi Jurani, dapat dilihat pada [User Manual](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf)
+Berikut ini merupakan dokumen-dokumen terkait dengan pengembangan aplikasi Jurani.
+
++ [Project Time Table](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/gantt_chart.PNG)
++ [System Definition](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/user-docs.md)
++ [System Requirement Spesification](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/SRSDOCUMENTJURANI.pdf)
++ [UML](https://github.com/gunadarma-academy/asde-papier/tree/master/docs/diagrams) ([Use Case](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/diagrams/Use-case.jpg) dan [Flowchart](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/diagrams/activity_diagram.png))
++ [Mockup](https://github.com/gunadarma-academy/asde-papier/tree/master/docs/mockups)
 
 ## Technical Documentation
 
 +  [SRS Document](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/SRSDOCUMENTJURANI.pdf)
-+  [User Manual] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf)
-+  [Feedback Prototype] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/PrototypeFeedback.pdf)
++  [User Manual](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf)
++  [Feedback Prototype](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/PrototypeFeedback.pdf)
 
 
 --------------------------------------------------
