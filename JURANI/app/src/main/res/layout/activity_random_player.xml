@@ -30,6 +30,7 @@
         android:layout_weight="0"
         android:textSize="21dp"
         android:textStyle="bold"
+        android:textColor="@color/colorText"
         android:fontFamily=""
         android:text="@string/text_rolling" />
 
@@ -40,6 +41,7 @@
         android:layout_weight="15"
         android:layout_marginTop="7dp"
         android:textSize="16dp"
+        android:textColor="@color/colorText"
         android:text="@string/text_turn_id" />
 
     <TextView
@@ -50,7 +52,8 @@
         android:layout_height="80dp"
         android:layout_weight="1"
         android:textSize="21dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/colorText"/>
 
     <!--Linear Layout just for disguising-->
     <LinearLayout
