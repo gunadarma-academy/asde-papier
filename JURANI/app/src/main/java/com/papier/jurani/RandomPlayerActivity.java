@@ -2,6 +2,7 @@ package com.papier.jurani;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -39,14 +40,24 @@ public class RandomPlayerActivity extends AppCompatActivity {
             public void run() {
                 while (i < player.length) {
                     try {
-                        Thread.sleep(10);
+                        Thread.sleep(250);
                         randName.post(new Runnable() {
                             @Override
                             public void run() {
                                 randName.setText(player[i]);
                                 if (i == player.length-1) {
+                                    if (i%2 == 0) {
+                                        randName.setBackgroundResource(R.drawable.random_text_up);
+                                    } else {
+                                        randName.setBackgroundResource(R.drawable.random_text_down);
+                                    }
                                     i = 0;
                                 } else {
+                                    if (i%2 == 0) {
+                                        randName.setBackgroundResource(R.drawable.random_text_up);
+                                    } else {
+                                        randName.setBackgroundResource(R.drawable.random_text_down);
+                                    }
                                     i += 1;
                                 }
                             }
