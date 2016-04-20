@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/gunadarma-academy/asde-papier.png?label=ready&title=Ready)](https://waffle.io/gunadarma-academy/asde-papier)
 # JURANI
 
 [![Join the chat at https://gitter.im/gunadarma-academy/asde-papier](https://badges.gitter.im/gunadarma-academy/asde-papier.svg)](https://gitter.im/gunadarma-academy/asde-papier?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -23,8 +22,7 @@ Estimasi terselesaikannya aplikasi ini selama 8 minggu dengan menerapkan Github 
 
 ## User Documentation
 
-### User Manual
-<https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf>
+Untuk mengetahui cara pemasangan hingga penggunaan aplikasi Jurani, dapat dilihat pada [User Manual](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf)
 
 --------------------------------------------------
 
