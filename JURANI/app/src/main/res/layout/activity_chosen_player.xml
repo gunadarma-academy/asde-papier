@@ -38,7 +38,7 @@
 
     <TextView
         android:id="@+id/chosen_name"
-        android:background="#FFF000"
+        android:background="@color/colorTextBase"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -65,6 +65,8 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:text="@string/action_truth"
+            android:textSize="20dp"
+            android:textColor="@color/colorTextBase"
             android:layout_gravity="center_horizontal" />
 
         <Button
@@ -74,6 +76,8 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:text="@string/action_dare"
+            android:textSize="20dp"
+            android:textColor="@color/colorTextBase"
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>

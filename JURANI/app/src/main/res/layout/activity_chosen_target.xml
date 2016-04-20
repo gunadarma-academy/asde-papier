@@ -40,7 +40,7 @@
 
     <TextView
         android:id="@+id/chosen_target"
-        android:background="#FFF000"
+        android:background="@color/colorTextBase"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="80dp"
