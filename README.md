@@ -24,12 +24,19 @@ Estimasi terselesaikannya aplikasi ini selama 8 minggu dengan menerapkan Github 
 
 Untuk mengetahui cara pemasangan hingga penggunaan aplikasi Jurani, dapat dilihat pada [User Manual](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf)
 
+## Technical Documentation
+
++  [SRS Document](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/SRSDOCUMENTJURANI.pdf)
++  [User Manual] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf)
++  [Feedback Prototype] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/PrototypeFeedback.pdf)
+
+
 --------------------------------------------------
 
 ## General Notes
 
 For the most updated notes, see <https://github.com/gunadarma-academy/ASDE>. This README is a template from <https://github.com/gunadarma-academy/asde-project>.
-
+asdadadadadasdasd
 ### Materials
 
 + Introduction
