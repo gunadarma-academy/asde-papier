@@ -27,7 +27,7 @@ Berikut ini merupakan dokumen-dokumen terkait dengan pengembangan aplikasi Juran
 + [Project Time Table](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/gantt_chart.PNG)
 + [System Definition](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/user-docs.md)
 + [System Requirement Spesification](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/SRSDOCUMENTJURANI.pdf)
-+ [UML](https://github.com/gunadarma-academy/asde-papier/tree/master/docs/diagrams) ([Use Case](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/diagrams/Use-case.jpg) dan [Flowchart](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/diagrams/activity_diagram.png))
++ [UML](https://github.com/gunadarma-academy/asde-papier/tree/master/docs/diagrams)
 + [Mockup](https://github.com/gunadarma-academy/asde-papier/tree/master/docs/mockups)
 
 ## Technical Documentation
