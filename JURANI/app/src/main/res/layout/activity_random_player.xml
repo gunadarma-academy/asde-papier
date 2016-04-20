@@ -44,7 +44,7 @@
 
     <TextView
         android:id="@+id/random_name"
-        android:background="#FFFFFF"
+        android:background="@color/colorTextBase"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -59,7 +59,7 @@
         android:layout_weight="80"></LinearLayout>
 
     <Button
-        android:id="@+id/next_button_count"
+        android:id="@+id/stop_button_random_player"
         android:background="@drawable/button_next"
         android:layout_width="match_parent"
         android:layout_height="60dp"
