@@ -42,7 +42,7 @@ Berikut ini merupakan dokumen-dokumen terkait dengan pengembangan aplikasi Juran
 ## General Notes
 
 For the most updated notes, see <https://github.com/gunadarma-academy/ASDE>. This README is a template from <https://github.com/gunadarma-academy/asde-project>.
-asdadadadadasdasd
+
 ### Materials
 
 + Introduction
