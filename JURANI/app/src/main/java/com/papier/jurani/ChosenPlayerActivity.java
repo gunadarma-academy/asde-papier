@@ -20,7 +20,7 @@ public class ChosenPlayerActivity extends AppCompatActivity {
     private String [] player;
     private String chosenPlayer;
     private TextView chosenText;
-    private Button repeat;
+    //private Button repeat;
     private Button truth;
     private Button dare;
 
@@ -50,9 +50,10 @@ public class ChosenPlayerActivity extends AppCompatActivity {
         truth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToTruth = new Intent (getApplicationContext(), RandomTruthActivity.class);
+                Intent goToTruth = new Intent (getApplicationContext(), RandomTaskActivity.class);
                 goToTruth.putExtra("player", player);
                 goToTruth.putExtra("chosen", chosenPlayer);
+                goToTruth.putExtra("task", "truth");
                 startActivity(goToTruth);
                 finish();
             }
@@ -62,9 +63,10 @@ public class ChosenPlayerActivity extends AppCompatActivity {
         dare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToDare = new Intent (getApplicationContext(), RandomDareActivity.class);
+                Intent goToDare = new Intent (getApplicationContext(), RandomTaskActivity.class);
                 goToDare.putExtra("player", player);
                 goToDare.putExtra("chosen", chosenPlayer);
+                goToDare.putExtra("task", "dare");
                 startActivity(goToDare);
                 finish();
             }
