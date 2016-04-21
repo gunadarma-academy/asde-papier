@@ -20,11 +20,11 @@
 ## _Software_ Untuk Pengembangan
 
  - Aplikasi
-> - Android Studio 1.5.1
+   Android Studio 1.5.1
  - Desain
-> - Inkscape
+   Inkscape
  - Perangkat Pengujian
-> - ASUS Zenfone 2, Android 5.0, API 21
+   ASUS Zenfone 2, Android 5.0, API 21
 
 
 ## Spesifikasi Kebutuhan untuk Menjalankan Aplikasi
