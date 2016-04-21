@@ -30,6 +30,7 @@
         android:layout_weight="0"
         android:textSize="21dp"
         android:textStyle="bold"
+        android:textColor="@color/colorText"
         android:fontFamily=""
         android:text="@string/text_rolling" />
 
@@ -39,18 +40,20 @@
         android:layout_height="wrap_content"
         android:layout_weight="15"
         android:layout_marginTop="7dp"
-        android:textSize="16dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorText"
         android:text="@string/text_turn_id" />
 
     <TextView
         android:id="@+id/random_name"
-        android:background="#FFFFFF"
+        android:background="@color/colorTextBase"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="76dp"
         android:layout_weight="1"
-        android:textSize="21dp"
-        android:textStyle="bold" />
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"/>
 
     <!--Linear Layout just for disguising-->
     <LinearLayout
@@ -59,13 +62,15 @@
         android:layout_weight="80"></LinearLayout>
 
     <Button
-        android:id="@+id/next_button_count"
+        android:id="@+id/stop_button_random_player"
         android:background="@drawable/button_next"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="@string/action_next"
+        android:text="@string/action_stop"
+        android:textSize="20dp"
+        android:textColor="@color/colorTextBase"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
