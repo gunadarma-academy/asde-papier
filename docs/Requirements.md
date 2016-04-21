@@ -18,12 +18,15 @@
 
 
 ## _Software_ Untuk Pengembangan
-- Android Studio 1.5.1
-
-
+- Aplikasi
+> - Android Studio 1.5.1
+- Desain
+> - Inkscape
+- Perangkat Pengujian
+> - ASUS Zenfone 2, Android 5.0, API 21
 
 
 ## Spesifikasi Kebutuhan untuk Menjalankan Aplikasi
  
- - Minimum OS Android 4.0.4 (Ice Cream Sandwich)
- - 4.7 inch screen for optimal result
+ - Minimum OS Android 4.0.4, API 15 (Ice Cream Sandwich)
+ - Layar 5.0 inch untuk tampilan yang optimal
