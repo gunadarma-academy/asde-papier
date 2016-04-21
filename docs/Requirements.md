@@ -12,8 +12,8 @@
    - Mengacak tantangan
    - Mengacak obyek dari penerima tantangan
 
- - Melakukan _reset_ terhadap permaian
- - Petunjuk permaian
+ - Melakukan _reset_ terhadap permainan
+ - Petunjuk permainan
  - Informasi pengembang
 
 
