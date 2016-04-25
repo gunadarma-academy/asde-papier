@@ -52,7 +52,7 @@ public class RandomTaskActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_task);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.random_dare_toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.random_task_toolbar);
         setSupportActionBar(toolbar);
 
         player = getIntent().getStringArrayExtra("player");
