@@ -28,7 +28,7 @@ public class ChosenPlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chosen_player);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.random_player_toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.chosen_player_toolbar);
         setSupportActionBar(toolbar);
 
         player = getIntent().getStringArrayExtra("player");
