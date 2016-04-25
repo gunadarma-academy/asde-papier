@@ -72,7 +72,7 @@ public class RandomTaskActivity extends AppCompatActivity {
             public void run() {
                 while (i < dare.length) {
                     try {
-                        Thread.sleep(200);
+                        Thread.sleep(50);
                         middleTemp.post(new Runnable() {
                             @Override
                             public void run() {
