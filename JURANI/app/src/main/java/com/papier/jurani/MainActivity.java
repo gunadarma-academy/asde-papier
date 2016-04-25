@@ -2,6 +2,7 @@ package com.papier.jurani;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -13,13 +14,25 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
+import java.lang.reflect.Type;
+
 public class MainActivity extends AppCompatActivity {
 
     private int people = 2;
+    private TextView text1;
+    private TextView text2;
     private TextView count;
     private Button plus;
     private Button min;
     private Button goToName;
+    private Typeface type1;
+    private Typeface type2;
+    private Typeface typeCount;
+    private Typeface typePlus;
+    private Typeface typeMin;
+    private Typeface buttonNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +41,25 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.count_toolbar);
         setSupportActionBar(toolbar);
 
+        text1 = (TextView) findViewById(R.id.count_text_1);
+        type1 = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        text1.setTypeface(type1);
+
+        text2 = (TextView) findViewById(R.id.count_text_2);
+        type2 = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        text2.setTypeface(type2);
+
         count = (TextView) findViewById(R.id.count);
+        typeCount = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        count.setTypeface(typeCount);
+
         plus = (Button) findViewById(R.id.plus_count);
+        typePlus = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        plus.setTypeface(typePlus);
+
         min = (Button) findViewById(R.id.min_count);
+        typeMin = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        min.setTypeface(typeMin);
 
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         goToName = (Button) findViewById(R.id.next_button_count);
+        buttonNext = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        goToName.setTypeface(buttonNext);
         goToName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

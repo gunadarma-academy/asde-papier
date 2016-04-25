@@ -2,6 +2,7 @@ package com.papier.jurani;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -12,9 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-/**
- * Created by Angellica on 4/20/2016.
- */
 public class RandomTaskActivity extends AppCompatActivity {
 
     private int i = 0;
@@ -46,13 +44,19 @@ public class RandomTaskActivity extends AppCompatActivity {
     private Button act;
     private Thread randVerb;
     private Thread randObj;
+    private Typeface typeUp;
+    private Typeface typeMiddle;
+    private Typeface typeMiddleTemp;
+    private Typeface typeDown;
+    private Typeface typeDownTemp;
+    private Typeface typeButton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_task);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.random_dare_toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.random_task_toolbar);
         setSupportActionBar(toolbar);
 
         player = getIntent().getStringArrayExtra("player");
@@ -63,16 +67,27 @@ public class RandomTaskActivity extends AppCompatActivity {
 
         up = (TextView) findViewById(R.id.text_up);
         up.setText(chosenPlayer);
+        typeUp = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        up.setTypeface(typeUp);
+
         middle = (TextView) findViewById(R.id.text_middle);
+        typeMiddle = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        middle.setTypeface(typeMiddle);
+
         down = (TextView) findViewById(R.id.text_down);
+        typeDown = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        down.setTypeface(typeDown);
 
         middleTemp = (TextView) findViewById(R.id.text_middle_temp);
+        typeMiddleTemp = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        middleTemp.setTypeface(typeMiddleTemp);
+
         final Runnable runVerb = new Runnable() {
             @Override
             public void run() {
                 while (i < dare.length) {
                     try {
-                        Thread.sleep(200);
+                        Thread.sleep(30);
                         middleTemp.post(new Runnable() {
                             @Override
                             public void run() {
@@ -129,12 +144,14 @@ public class RandomTaskActivity extends AppCompatActivity {
         randVerb.start();
 
         downTemp = (TextView) findViewById(R.id.text_down_temp);
+        typeDownTemp = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        downTemp.setTypeface(typeDownTemp);
         final Runnable runObj = new Runnable() {
             @Override
             public void run() {
                 while (j < player.length) {
                     try {
-                        Thread.sleep(200);
+                        Thread.sleep(30);
                         downTemp.post(new Runnable() {
                             @Override
                             public void run() {
@@ -173,6 +190,8 @@ public class RandomTaskActivity extends AppCompatActivity {
         };
 
         act = (Button) findViewById(R.id.stop_button_random);
+        typeButton = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        act.setTypeface(typeButton);
         act.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -250,6 +269,7 @@ public class RandomTaskActivity extends AppCompatActivity {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     Intent goToFirst = new Intent(getApplicationContext(), MainActivity.class);
+                    goToFirst.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(goToFirst);
                     finish();
                 }
@@ -268,5 +288,29 @@ public class RandomTaskActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Apakah kamu yakin ingin keluar dari aplikasi ini?").setTitle("Keluar");
+        builder.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent close = new Intent(getApplicationContext(), CloseAppActivity.class);
+                close.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(close);
+                finish();
+            }
+        });
+        builder.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                closeContextMenu();
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

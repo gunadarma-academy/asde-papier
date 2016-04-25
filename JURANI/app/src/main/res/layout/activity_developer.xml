@@ -9,13 +9,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin" >
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/photo_group"/>
+
     <TextView
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:text="Siapa Kami?" />
 
     <TextView
@@ -31,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15dp"
+        android:textColor="@color/colorPrimary"
         android:text="Angellica Octavianzy S." />
 
     <TextView
@@ -38,13 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15dp"
-        android:text="Mahendra Sunt Servanda" />
-
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:textColor="@color/colorPrimary"
         android:text="Kenneth Moh. Albani Hakim" />
 
     <TextView
@@ -52,6 +53,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Mahendra Sunt Servanda" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimary"
         android:text="Sandy Febriant Eka Putra" />
 
     <Button
@@ -60,7 +70,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginRight="15dp"
         android:textSize="15dp"
         android:textStyle="bold"
         android:text="@string/action_close"
