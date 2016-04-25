@@ -3,6 +3,7 @@ package com.papier.jurani;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -15,15 +16,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Type;
+
 public class PlayerInputActivity extends AppCompatActivity {
 
     private int total;
     private int i = 0;
     private String [] name;
-    private TextView parenttext;
-    private TextView childtext;
+    private TextView parentText;
+    private TextView childText;
     private EditText inputName;
     private Button insert;
+    private Typeface typeParent;
+    private Typeface typeChild;
+    private Typeface typeInsert;
+    private Typeface buttonInsert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,15 +41,21 @@ public class PlayerInputActivity extends AppCompatActivity {
 
         total = getIntent().getIntExtra("sum", 2);
 
-        parenttext = (TextView) findViewById(R.id.player_parent_text);
-        parenttext.setText(String.valueOf(total-(i+1))+" more player to go");
+        parentText = (TextView) findViewById(R.id.player_parent_text);
+        parentText.setText(String.valueOf(total-(i+1))+" more player to go");
+        typeParent = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        parentText.setTypeface(typeParent);
 
-        childtext = (TextView) findViewById(R.id.player_child_text);
-        childtext.setText("Masukkan nama pemain ke-"+String.valueOf(i+1)+":");
+        childText = (TextView) findViewById(R.id.player_child_text);
+        childText.setText("Masukkan nama pemain ke-" + String.valueOf(i + 1) + ":");
+        typeChild = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        childText.setTypeface(typeChild);
 
         name = new String[total];
 
         inputName = (EditText) findViewById(R.id.input_name);
+        typeInsert = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        inputName.setTypeface(typeInsert);
         /**
         inputName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -77,6 +90,8 @@ public class PlayerInputActivity extends AppCompatActivity {
         });*/
 
         insert = (Button) findViewById(R.id.next_button_player);
+        buttonInsert = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        insert.setTypeface(buttonInsert);
         insert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,8 +106,8 @@ public class PlayerInputActivity extends AppCompatActivity {
                                 randomName();
                             } else {
                                 i += 1;
-                                parenttext.setText(String.valueOf(total-(i+1))+" more player to go");
-                                childtext.setText("Masukkan nama pemain ke-"+String.valueOf(i+1)+":");
+                                parentText.setText(String.valueOf(total-(i+1))+" more player to go");
+                                childText.setText("Masukkan nama pemain ke-"+String.valueOf(i+1)+":");
                                 inputName.setText("");
                             }
                             break;

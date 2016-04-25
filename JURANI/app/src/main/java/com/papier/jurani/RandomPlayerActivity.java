@@ -2,6 +2,7 @@ package com.papier.jurani;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -18,9 +19,15 @@ public class RandomPlayerActivity extends AppCompatActivity {
     private int i = 0;
     private String [] player;
     private String chosenPlayer;
+    private TextView text1;
+    private TextView text2;
     private TextView randName;
     private Button stop;
     private Thread runThread;
+    private Typeface type1;
+    private Typeface type2;
+    private Typeface rand;
+    private Typeface buttonStop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,15 +36,26 @@ public class RandomPlayerActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.random_player_toolbar);
         setSupportActionBar(toolbar);
 
+        text1 = (TextView) findViewById(R.id.roll_text_1);
+        type1 = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        text1.setTypeface(type1);
+
+        text2 = (TextView) findViewById(R.id.roll_text_2);
+        type2 = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        text2.setTypeface(type2);
+
         player = getIntent().getStringArrayExtra("player");
+
         randName = (TextView) findViewById(R.id.random_name);
+        rand = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        randName.setTypeface(rand);
 
         Runnable runName = new Runnable() {
             @Override
             public void run() {
                 while (i < player.length) {
                     try {
-                        Thread.sleep(50);
+                        Thread.sleep(30);
                         randName.post(new Runnable() {
                             @Override
                             public void run() {
@@ -71,6 +89,8 @@ public class RandomPlayerActivity extends AppCompatActivity {
         runThread.start();
 
         stop = (Button) findViewById(R.id.stop_button_random_player);
+        buttonStop = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        stop.setTypeface(buttonStop);
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

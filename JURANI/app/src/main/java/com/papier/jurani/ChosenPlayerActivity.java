@@ -2,6 +2,7 @@ package com.papier.jurani;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -12,14 +13,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.lang.reflect.Type;
+
 public class ChosenPlayerActivity extends AppCompatActivity {
 
     private String [] player;
     private String chosenPlayer;
     private TextView chosenText;
+    private TextView text1;
+    private TextView text2;
     //private Button repeat;
     private Button truth;
     private Button dare;
+    private Typeface type1;
+    private Typeface type2;
+    private Typeface typeName;
+    private Typeface buttonTruth;
+    private Typeface buttonDare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +38,22 @@ public class ChosenPlayerActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.chosen_player_toolbar);
         setSupportActionBar(toolbar);
 
+        text1 = (TextView) findViewById(R.id.chosen_text_1);
+        type1 = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        text1.setTypeface(type1);
+
+        text2 = (TextView) findViewById(R.id.chosen_text_2);
+        type2 = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        text2.setTypeface(type2);
+
         player = getIntent().getStringArrayExtra("player");
 
         chosenPlayer = getIntent().getExtras().getString("chosen");
 
         chosenText = (TextView) findViewById(R.id.chosen_name);
         chosenText.setText(chosenPlayer);
+        typeName = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        chosenText.setTypeface(typeName);
 
         //repeat = (Button) findViewById(R.id.repeat_button);
         //repeat.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +64,8 @@ public class ChosenPlayerActivity extends AppCompatActivity {
         //});
 
         truth = (Button) findViewById(R.id.truth_button);
+        buttonTruth = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        truth.setTypeface(buttonTruth);
         truth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +79,8 @@ public class ChosenPlayerActivity extends AppCompatActivity {
         });
 
         dare = (Button) findViewById(R.id.dare_button);
+        buttonDare = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        dare.setTypeface(buttonDare);
         dare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

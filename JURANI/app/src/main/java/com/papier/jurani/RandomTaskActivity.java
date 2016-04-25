@@ -2,6 +2,7 @@ package com.papier.jurani;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +44,12 @@ public class RandomTaskActivity extends AppCompatActivity {
     private Button act;
     private Thread randVerb;
     private Thread randObj;
+    private Typeface typeUp;
+    private Typeface typeMiddle;
+    private Typeface typeMiddleTemp;
+    private Typeface typeDown;
+    private Typeface typeDownTemp;
+    private Typeface typeButton;
 
 
     @Override
@@ -60,16 +67,27 @@ public class RandomTaskActivity extends AppCompatActivity {
 
         up = (TextView) findViewById(R.id.text_up);
         up.setText(chosenPlayer);
+        typeUp = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        up.setTypeface(typeUp);
+
         middle = (TextView) findViewById(R.id.text_middle);
+        typeMiddle = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        middle.setTypeface(typeMiddle);
+
         down = (TextView) findViewById(R.id.text_down);
+        typeDown = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        down.setTypeface(typeDown);
 
         middleTemp = (TextView) findViewById(R.id.text_middle_temp);
+        typeMiddleTemp = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        middleTemp.setTypeface(typeMiddleTemp);
+
         final Runnable runVerb = new Runnable() {
             @Override
             public void run() {
                 while (i < dare.length) {
                     try {
-                        Thread.sleep(50);
+                        Thread.sleep(30);
                         middleTemp.post(new Runnable() {
                             @Override
                             public void run() {
@@ -126,12 +144,14 @@ public class RandomTaskActivity extends AppCompatActivity {
         randVerb.start();
 
         downTemp = (TextView) findViewById(R.id.text_down_temp);
+        typeDownTemp = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        downTemp.setTypeface(typeDownTemp);
         final Runnable runObj = new Runnable() {
             @Override
             public void run() {
                 while (j < player.length) {
                     try {
-                        Thread.sleep(200);
+                        Thread.sleep(30);
                         downTemp.post(new Runnable() {
                             @Override
                             public void run() {
@@ -170,6 +190,8 @@ public class RandomTaskActivity extends AppCompatActivity {
         };
 
         act = (Button) findViewById(R.id.stop_button_random);
+        typeButton = Typeface.createFromAsset(getAssets(), "fonts/proxima_nova_bold.otf");
+        act.setTypeface(typeButton);
         act.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
