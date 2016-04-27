@@ -44,8 +44,8 @@ Berikut ini merupakan dokumen-dokumen terkait dengan pengembangan aplikasi Juran
 + [Function Testing Result] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/FunctionTestingResult.pdf)
 + [User Acceptance Test Scenario] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserAcceptanceTestScenario.pdf)
 + [User Acceptance Test Result] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserAcceptanceTestingResult.pdf)
-+ [Whitebox Testing Scenario]..
-+ [Whitebox Testing Result]..
++ [Whitebox Testing Scenario] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/WhiteboxTestingScenario.pdf)
++ [Whitebox Testing Result] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/WhiteboxTestingResult.pdf)
 
 --------------------------------------------------
 
