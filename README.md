@@ -26,16 +26,26 @@ Berikut ini merupakan dokumen-dokumen terkait dengan pengembangan aplikasi Juran
 
 + [Project Time Table](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/gantt_chart.PNG)
 + [System Definition](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/user-docs.md)
-+ [System Requirement Spesification](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/SRSDOCUMENTJURANI.pdf)
++ [System Requirement Spesification](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/SRS%20DOCUMENT%20JURANI.pdf)
 + [UML](https://github.com/gunadarma-academy/asde-papier/tree/master/docs/diagrams)
 + [Mockup](https://github.com/gunadarma-academy/asde-papier/tree/master/docs/mockups)
 
 ## Technical Documentation
 
-+  [SRS Document](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/SRSDOCUMENTJURANI.pdf)
++  [SRS Document](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/SRS%20DOCUMENT%20JURANI.pdf)
 +  [User Manual](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserManual.pdf)
 +  [Feedback Prototype](https://github.com/gunadarma-academy/asde-papier/blob/master/docs/PrototypeFeedback.pdf)
 
+## Testing Documentation
++ [Master Test Plan Document] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/MasterTestPlan.pdf)
++ [Device Testing Scenario] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/DeviceTestingScenario.pdf)
++ [Device Testing Result] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/DeviceTestingResult.pdf)
++ [Function Testing Scenario] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/FunctionTestingScenario.pdf)
++ [Function Testing Result] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/FunctionTestingResult.pdf)
++ [User Acceptance Test Scenario] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserAcceptanceTestScenario.pdf)
++ [User Acceptance Test Result] (https://github.com/gunadarma-academy/asde-papier/blob/master/docs/UserAcceptanceTestingResult.pdf)
++ [Whitebox Testing Scenario]..
++ [Whitebox Testing Result]..
 
 --------------------------------------------------
 
